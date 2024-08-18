@@ -1,30 +1,42 @@
-const jsonServer = require('json-server')
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+const fs = require('fs');
+const path = require('path');
 
-const server = jsonServer.create()
+// Middleware
+server.use(middlewares);
+server.use(jsonServer.bodyParser);
 
-// Uncomment to allow write operations
-const fs = require("fs")
-const path = require("path")
-const db = JSON.parse(fs.readFileSync(path.join("db.json")))
-// const data = fs.readFileSync(filePath, "utf-8");
-// const db = JSON.parse(data);
-// const router = jsonServer.router(db)
+// Custom route to handle adding a message to the inbox chat
+server.post('/inbox/:id/chat', (req, res) => {
+    const dbFilePath = path.join(__dirname, 'db.json');
+    const db = JSON.parse(fs.readFileSync(dbFilePath, 'utf-8'));
 
-// Comment out to allow write operations
-const router = jsonServer.router(db);
+    const { id } = req.params;
+    const newMessage = req.body;
 
-const middlewares = jsonServer.defaults()
+    // Find the correct inbox by ID
+    const inbox = db.inbox.find((inbox) => inbox.id === id);
 
-server.use(middlewares)
-// Add this before server.use(router)
-server.use(jsonServer.rewriter({
-    '/api/*': '/$1',
-    '/blog/:resource/:id/show': '/:resource/:id'
-}))
-server.use(router)
+    if (inbox) {
+        // Find the latest chat and add the new message to its details
+        const latestChat = inbox.chat[inbox.chat.length - 1];
+        latestChat.detail.push(newMessage);
+
+        // Save the updated data back to the db.json file
+        fs.writeFileSync(dbFilePath, JSON.stringify(db, null, 2));
+
+        res.status(200).json(newMessage);
+    } else {
+        res.status(404).json({ message: "Inbox not found" });
+    }
+});
+
+server.use(router);
+
+// Start the server
 server.listen(3000, () => {
-    console.log('JSON Server is running')
-})
-
-// Export the Server API
-module.exports = server
+    console.log('JSON Server is running');
+});
