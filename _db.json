@@ -1,0 +1,195 @@
+{
+  "inbox": [
+    {
+      "id": "1",
+      "title": "I-589 - AMARKHIL, Obaidullah [Affirmative Filing with ZHN]",
+      "participant": 3,
+      "message": "Morning, I'll try to do them. Thanks",
+      "name": "Obaidullah Amarkhil",
+      "date": "June 9, 2021",
+      "time": "19:32",
+      "unread": true
+    },
+    {
+      "id": "2",
+      "title": "109220-Naturalization",
+      "participant": 2,
+      "message": "Please check this out!",
+      "name": "Cameron Phillips",
+      "date": "January 1, 2021",
+      "time": "19:10",
+      "unread": false
+    },
+    {
+      "id": "3",
+      "title": "Jeannette Moraima Guaman Chamba(Hutto I-589)[Hutto Follow Up - Brief Service]",
+      "participant": 2,
+      "message": "Hey, please read.",
+      "name": "Ellen",
+      "date": "02/06/2021",
+      "time": "10:45",
+      "unread": false
+    },
+    {
+      "id": "4",
+      "title": "8405-Diana SALAZAR MUNGUIA",
+      "participant": 2,
+      "message": "I understand your initial concerns and thats very valid, Elizabeth, But you blablabla",
+      "name": "Cameron Phillips",
+      "date": "01/06/2021",
+      "time": "12:19",
+      "unread": false
+    },
+    {
+      "id": "5",
+      "title": "FastVisa Support",
+      "participant": 1,
+      "message": "Hey there! Welcome to your inbox.",
+      "name": "",
+      "date": "01/06/2021",
+      "time": "12:19",
+      "unread": false
+    }
+  ],
+  "detail_inbox": [
+    {
+      "id": "1",
+      "inbox_id": "1",
+      "name": "You",
+      "time": "19:32",
+      "date": "January 1, 2021",
+      "message": "No worries. It will be completed ASAP. I've asked him yesterday.",
+      "unread": false
+    },
+    {
+      "id": "2",
+      "inbox_id": "1",
+      "name": "Mary Hilda",
+      "date": "June 9, 2021",
+      "time": "19:32",
+      "message": "Hello Obaidullah, I will be your case advisor for case #029290. I have assigned some homework for you to fill. Please keep up with the due dates. Should you have any wuestions, you can message me any time. Thanks",
+      "unread": false
+    },
+    {
+      "id": "3",
+      "inbox_id": "1",
+      "name": "You",
+      "time": "19:32",
+      "date": "June 9, 2021",
+      "message": "Please contact Mary for questions regarding the case bcs she will be managing your forms from now on! Thanks Mary.",
+      "unread": false
+    },
+    {
+      "id": "4",
+      "inbox_id": "1",
+      "name": "Mary Hilda",
+      "date": "June 9, 2021",
+      "time": "19:32",
+      "message": "Sure thing, Claren",
+      "unread": false
+    },
+    {
+      "id": "5",
+      "inbox_id": "1",
+      "name": "Obaidullah Amarkhil",
+      "date": "June 9, 2021",
+      "time": "19:32",
+      "message": "Morning, I'll try to do them. Thanks",
+      "unread": true
+    },
+    {
+      "id": "6",
+      "inbox_id": "2",
+      "date": "January 1, 2021",
+      "name": "Cameron Phillips",
+      "time": "19:10",
+      "message": "Please check this out!",
+      "unread": false
+    },
+    {
+      "id": "7",
+      "inbox_id": "3",
+      "name": "Ellen",
+      "date": "02/06/2021",
+      "time": "10:45",
+      "message": "Hey, please read.",
+      "unread": false
+    },
+    {
+      "id": "8",
+      "inbox_id": "4",
+      "date": "01/06/2021",
+      "name": "Cameron Phillips",
+      "time": "12:19",
+      "message": "I understand your initial concerns and thats very valid, Elizabeth, But you blablabla",
+      "unread": false
+    },
+    {
+      "id": "9",
+      "inbox_id": "5",
+      "name": "",
+      "time": "12:19",
+      "date": "01/06/2021",
+      "message": "Hey there! Welcome to your inbox.",
+      "unread": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "category": "Personal Category",
+      "title": "Cross-reference with Jeanne for Case #192813",
+      "date": "2024-06-10",
+      "description": "",
+      "status": false
+    },
+    {
+      "id": "2",
+      "category": "Personal Category",
+      "title": "Contact Andrew for Onlince Meeting and Conference",
+      "date": "2024-06-10",
+      "description": "",
+      "status": false
+    },
+    {
+      "id": "3",
+      "category": "Personal Category",
+      "title": "Check and Revise Homework from Andre Gonzales",
+      "date": "2024-06-11",
+      "description": "Homeworks needed to be checked are as follows: Client Profile, Questionnaire, Passport Requierements and Images, Personal Documents.",
+      "status": false
+    },
+    {
+      "id": "4",
+      "category": "Urgent To-Do",
+      "title": "Close off Case #012920- RODRIGUES, Amiguel",
+      "date": "2024-06-12",
+      "description": "Closing off this case since this application has been cancelled. No one really understand how this case couls possibly be cancelled. The options and the documents within this document were totally a guaranteed for a success!",
+      "status": false
+    },
+    {
+      "id": "5",
+      "category": "Urgent To-Do",
+      "title": "Set up documentation report for several Cases: Case 145443, Case 192829 and Case 182203",
+      "date": "2024-06-14",
+      "description": "All Cases must include all payment transactions, all documents and forms filled. All conversations in comments and messages in channels and emails shoudl be provided as well in.",
+      "status": false
+    },
+    {
+      "id": "6",
+      "category": "Urgent To-Do",
+      "title": "Set up appointment with Dr Blake",
+      "date": "2024-06-15",
+      "description": "",
+      "status": false
+    },
+    {
+      "id": "7",
+      "category": "Personal Category",
+      "title": "test",
+      "date": "2024-06-15",
+      "description": "test",
+      "status": false
+    }
+  ]
+}
